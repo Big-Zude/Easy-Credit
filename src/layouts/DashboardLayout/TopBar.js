@@ -9,12 +9,13 @@ import {
   Hidden,
   IconButton,
   Toolbar,
-  makeStyles
+  makeStyles, Typography
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
 import Logo from 'src/components/Logo';
+
 
 const useStyles = makeStyles(() => ({
   root: {},
@@ -40,7 +41,7 @@ const TopBar = ({
     >
       <Toolbar>
         <RouterLink to="/">
-          <Logo />
+          <Typography  style={{color:"#ffffff",fontSize:'20px'}}>Easy Credit </Typography>
         </RouterLink>
         <Box flexGrow={1} />
         <Hidden mdDown>
@@ -54,7 +55,7 @@ const TopBar = ({
             </Badge>
           </IconButton>
           <IconButton color="inherit">
-            <InputIcon />
+            {/* <InputIcon /> */}
           </IconButton>
         </Hidden>
         <Hidden lgUp>
